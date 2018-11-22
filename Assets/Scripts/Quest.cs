@@ -19,6 +19,12 @@ public class Quest : MonoBehaviour {
 
     private void Start()
     {
+        StartCoroutine(OnSecondFrame());
+    }
+
+    private IEnumerator OnSecondFrame()
+    {
+        yield return 0;
         SetNewQuest();
     }
 

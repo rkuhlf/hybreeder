@@ -13,8 +13,14 @@ public class Store : MonoBehaviour {
 
     public int index = 0;
 
-    private void Awake()
+    private void Start()
     {
+        StartCoroutine(OnSecondFrame());
+    }
+
+    private IEnumerator OnSecondFrame()
+    {
+        yield return 0;
         SetImage();
     }
 

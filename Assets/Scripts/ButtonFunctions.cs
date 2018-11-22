@@ -73,6 +73,7 @@ public class ButtonFunctions : MonoBehaviour {
 
     public void Restart()
     {
+        ui = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
