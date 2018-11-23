@@ -74,6 +74,7 @@ public class ButtonFunctions : MonoBehaviour {
     public void Restart()
     {
         ui = false;
+        Coins.coins = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
